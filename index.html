@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" manifest="/cache.manifest?v1">
+<head>
+  <meta charset="utf-8">
+  <title>Punch Clock by Ryan Florence</title>
+  <link rel=stylesheet href="style.css?v1.1" type="text/css" media=screen>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="apple-touch-icon" href="apple-touch-icon-iphone.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-ipad.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-iphone4.png" />
+</head>
+<body>
+
+<form id=newItemForm>
+  <input type=text id=name placeholder="Add Item">
+</form>
+<ul id=items></ul>
+
+<script>
+  var require = {
+    urlArgs: "bust=5"
+  };
+</script>
+<script data-main="app" src="require.js?v1"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* @override http://localhost:8888/style.css?v1.1 */
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+  color: #444;
+  background: url(img/fabric.png);
+}
+
+#newItemForm {
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #F0F0F0),color-stop(1, #AAA));
+  border-bottom: solid 1px #555;
+  padding: 8px 6px;
+  position: relative;
+  height: 39px;
+}
+
+#newItemForm input {
+  font-size: 20px;
+  padding: 4px;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  right: 6px;
+}
+
+button[type=submit]{
+  position: absolute;
+  right: 6px;
+  top: 10px;
+  height: 36px;
+  width: 49px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  min-height: 416px;
+}
+
+li {
+  clear: both;
+  padding: 12px 108px 12px 60px;
+  list-style: none;
+  background: #fff;
+  border-bottom: solid 1px #ccc;
+  cursor: pointer;
+  -webkit-transition: background 250ms ease;
+  position: relative;
+  min-height: 1.2em;
+  font-size: 20px;
+}
+
+li input {
+  position: absolute;
+  left: 2px;
+  width: 38px;
+  border: none;
+  color: #444;
+  font-size: 12px;
+  text-align: right;
+  margin-right: 10px;
+  top: 16px;
+  padding: 0;
+  background: #fff;
+}
+
+.delete {
+  position: absolute;
+  right: 2px;
+  top: 12px;
+}
+
+button.reset {
+  position: absolute;
+  right: 58px;
+  top: 12px;
+}
+
+li.reset {
+  -webkit-transiton: none;
+  background: yellow;
+}
+
+.indicator {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background: url(img/indicator.png) no-repeat -1px -14px;
+  top: 19px;
+  left: 44px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .indicator { 
+    background-image: url(img/indicator@2x.png); 
+    -webkit-background-size: 13px 26px;
+    top: 20px;
+  }
+}
+
+.on .indicator {
+  background-position: -1px -1px;
+}
+
+.on input {
+  color: #ce1d31;
+}
+
